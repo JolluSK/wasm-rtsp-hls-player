@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { User, ChevronDown, Moon, Sun } from 'lucide-react'
+import { ChevronDown, Moon, Sun } from 'lucide-react'
 import { useTheme } from "next-themes"
 import { Button } from "@/app/components/ui/button"
 import {
@@ -39,10 +39,10 @@ const Header = () => {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="flex items-center space-x-2">
               <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                <AvatarFallback>JD</AvatarFallback>
+                <AvatarImage src="/images/profile.jpeg" alt="@JSK" />
+                <AvatarFallback>JSK</AvatarFallback>
               </Avatar>
-              <span className="text-sm font-medium">John Doe</span>
+              <span className="text-sm font-medium">JSK</span>
               <ChevronDown size={16} className="text-muted-foreground" />
             </Button>
           </DropdownMenuTrigger>
