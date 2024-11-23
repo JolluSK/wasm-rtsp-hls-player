@@ -62,4 +62,4 @@ Ensure you have the following installed:
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/wasm-rtsp-hls-player.git
+   git clone https://github.com/JolluSK/wasm-rtsp-hls-player.git
