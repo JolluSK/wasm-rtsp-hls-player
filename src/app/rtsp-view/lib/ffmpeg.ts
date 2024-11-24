@@ -10,12 +10,12 @@ export async function getFFmpeg() {
 
   ffmpeg = new FFmpeg();
 
-  const baseURL = '/rtsp-view/3rdpartylib';
+  const baseURL = '/3rdpartylib';
 
   await ffmpeg.load({
     coreURL: await toBlobURL(`${baseURL}/ffmpeg-core.js`, 'text/javascript'),
     wasmURL: await toBlobURL(`${baseURL}/ffmpeg-core.wasm`, 'application/wasm'),
-    workerURL: await toBlobURL(`${baseURL}/ffmpeg-core.worker.js`, 'text/javascript'),
+    // workerURL: await toBlobURL(`${baseURL}/ffmpeg-core.worker.js`, 'text/javascript'),
   });
 
   return ffmpeg;
